@@ -1,0 +1,428 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap");
+* {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+@media only screen and (max-width: 1024px) {
+  .grid {
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: 700px;
+    grid-gap: 10px; } }
+
+.enlaces {
+  text-decoration: none;
+  color: black; }
+
+@media only screen and (max-width: 1024px) {
+  .enlaces {
+    display: flex;
+    gap: 2rem;
+    justify-content: center; } }
+
+.header {
+  grid-area: head;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  align-content: flex-end;
+  color: #bd1522;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #bd1522;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  background-image: url(../img/logo-3.jpeg);
+  image-resolution: 500px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 150px;
+  padding: 30px;
+  text-decoration-color: #bd1522;
+  padding: 30px;
+  margin: 10px; }
+
+.logoSuperior {
+  grid-area: main;
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 5px;
+  margin-bottom: 0px;
+  border-bottom: 0px;
+  padding-bottom: 0px; }
+
+.cherry {
+  grid-area: main;
+  background: white;
+  font-family: 'IM Fell French Canon SC', serif;
+  font-size: 40px;
+  color: black;
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: 0px; }
+
+.lashes {
+  grid-area: main;
+  background: white;
+  font-family: 'IM Fell French Canon SC', serif;
+  font-size: 40px;
+  color: grey;
+  margin-bottom: 30px; }
+
+.tituloCherry {
+  grid-area: main;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.presentacion {
+  grid-area: menu;
+  background-color: #bd1522;
+  text-align: center;
+  font-size: 20px;
+  background-color: #bd1522;
+  border: 10px;
+  margin: 20px;
+  padding: 10px;
+  color: white; }
+
+.fotosDeTrabajos {
+  grid-area: main;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 70px; }
+
+@media only screen and (max-width: 1024px) {
+  .fotosDeTrabajos {
+    grid-template-columns: repeat(2, 50px);
+    margin-left: 100px; } }
+
+.fotoHibridas {
+  grid-area: main;
+  background: white;
+  margin-left: 200px;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 4px solid #bd1522;
+  border-right: 4px solid #bd1522;
+  max-width: 30%;
+  box-shadow: 0px 0px 2px 2px #bd1522; }
+
+@media only screen and (max-width: 1024px) {
+  .fotoHibridas {
+    grid-template-columns: repeat(2, 100px);
+    margin-left: 100px; } }
+
+@media only screen and (max-width: 810px) {
+  .fotoHibridas {
+    grid-template-columns: repeat(2, 100px);
+    margin-left: 150px; } }
+
+.fotoClasicas {
+  max-width: 30%;
+  margin-left: 150px;
+  box-shadow: 0px 0px 2px 2px #bd1522; }
+
+@media only screen and (max-width: 1024px) {
+  .fotoClasicas {
+    grid-template-columns: repeat(2, 100px);
+    margin-left: 150px; } }
+
+@media only screen and (max-width: 810px) {
+  .fotoClasicas {
+    grid-template-columns: repeat(2, 100px);
+    margin-left: 30px; } }
+
+.subtitulosIndex {
+  grid-area: main;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px; }
+
+.subtitulo2 {
+  grid-area: main;
+  background: white;
+  margin-left: 600px; }
+
+.footer {
+  grid-area: foot;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-top: 3px #bd1522 solid;
+  margin: 70px;
+  padding-top: 15px; }
+
+.titulo {
+  grid-area: main;
+  background: white;
+  font-size: 25px;
+  display: block;
+  position: relative;
+  color: #bd1522;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.subtitulo {
+  grid-area: main;
+  background: white;
+  display: block;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  color: black;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 50px;
+  padding-top: 30px;
+  background: linear-gradient(45deg, #54565c 12%, #d8d9db 24%); }
+
+p {
+  grid-area: main;
+  background: grey;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+  color: white; }
+
+.subtituloPrecios {
+  grid-area: main;
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  font-size: 20px;
+  margin: 30px;
+  padding: 10px;
+  color: white; }
+
+.item {
+  grid-area: main;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px; }
+
+.btn {
+  display: block;
+  width: 150px;
+  background-color: #bd1522;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  margin: 20px 150px 20px 70px; }
+
+.btn:hover {
+  background-color: #e21e2e; }
+
+.btn2 {
+  display: block;
+  width: 150px;
+  background-color: #bd1522;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  margin: auto; }
+
+.btn2:hover {
+  background-color: #e21e2e; }
+
+.tecnica-clasica {
+  display: block;
+  width: 150px;
+  background-color: #bd1522;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-right: 710px; }
+
+.tecnica-hibrida {
+  display: block;
+  width: 150px;
+  background-color: #bd1522;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  margin-top: -65px;
+  margin-left: 640px; }
+
+/* Carrito */
+.borrar-extencion {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
+
+ul {
+  list-style: none; }
+
+#hero {
+  background-image: url(../img/hero.jpg);
+  height: 350px;
+  background-size: cover; }
+
+#encabezado {
+  margin: 30px 0; }
+
+.submenu {
+  position: relative; }
+
+.submenu #carrito {
+  display: none; }
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px; }
+
+.vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white; }
+
+.button, input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+.button {
+  margin-bottom: 1rem; }
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.u-pull-right {
+  float: right; }
+
+.u-pull-left {
+  float: left; }
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: none; }
+
+ol {
+  list-style: decimal inside; }
+
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+li {
+  margin-bottom: 1rem; }
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+
+th:last-child,
+td:last-child {
+  padding-right: 0; }

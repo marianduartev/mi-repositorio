@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+
+
+
+@media only screen and (max-width: 1024px) {
+    .grid { 
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: 700px;
+    grid-gap: 10px;
+    }
+}
+
+.enlaces {
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width: 1024px) {
+    .enlaces {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+
+    }
+}
+
+
+.header{
+    grid-area: head; background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: flex-end;
+    color: rgba(189, 21, 34, 1);
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgba(189, 21, 34, 1);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    background-image: url(../img/logo-3.jpeg);
+    image-resolution: 500px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 150px;
+    padding: 30px;
+    text-decoration-color: rgba(189, 21, 34, 1);
+    padding: 30px;
+    margin: 10px;
+}
+
+
+
+
+.logoSuperior{
+    grid-area: main; background: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 5px;
+    margin-bottom: 0px;
+   border-bottom: 0px;
+   padding-bottom: 0px;
+   }
+
+   .cherry {
+    grid-area: main; background: white;
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 40px;
+    color: black;
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: 0px;
+    }
+
+    .lashes{
+        grid-area: main; background: white;
+    
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 40px;
+    color: grey;
+    margin-bottom: 30px;
+    }
+
+    .tituloCherry{
+        grid-area: main; background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion{
+        grid-area:menu; background-color: rgba(189, 21, 34, 1);
+        text-align: center;
+        font-size: 20px;
+        background-color:rgba(189, 21, 34, 1);
+        border: 10px;
+        margin: 20px;
+        padding: 10px;
+        color:white
+        }
+
+.fotosDeTrabajos{
+    grid-area: main; background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    
+  
+}
+@media only screen and (max-width: 1024px){
+    .fotosDeTrabajos {
+        grid-template-columns: repeat(2, 50px);
+        margin-left: 100px;
+    }
+}
+.fotoHibridas{
+    grid-area: main; background: white;
+    margin-left: 200px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 4px solid rgba(189, 21, 34, 1);
+    border-right: 4px solid  rgba(189, 21, 34, 1);
+    max-width: 30%;
+    box-shadow: 0px 0px 2px 2px rgba(189, 21, 34, 1);
+}
+@media only screen and (max-width: 1024px){
+    .fotoHibridas {
+        grid-template-columns: repeat(2, 100px);
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width: 810px){
+    .fotoHibridas {
+        grid-template-columns: repeat(2, 100px);
+        margin-left: 150px;
+    }
+}
+.fotoClasicas{
+    max-width: 30%;
+    margin-left: 150px;
+    box-shadow: 0px 0px 2px 2px rgba(189, 21, 34, 1);
+}
+
+@media only screen and (max-width: 1024px){
+    .fotoClasicas {
+        grid-template-columns: repeat(2, 100px);
+        margin-left: 150px;
+    }
+}
+@media only screen and (max-width: 810px){
+    .fotoClasicas {
+        grid-template-columns: repeat(2, 100px);
+        margin-left: 30px;
+    }
+}
+
+.subtitulosIndex{
+    grid-area: main; background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align:center;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.subtitulo2{
+    grid-area: main; background: white;
+    margin-left: 300px;
+}
+
+.footer{
+    grid-area: foot; background: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-top: 3px rgba(189, 21, 34, 1) solid;
+    margin: 70px;
+    padding-top: 15px;
+}
+
+.titulo{
+    grid-area: main; background: white;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    color: rgba(189, 21, 34, 1);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+   
+}
+
+.subtitulo{
+    grid-area: main; background: white;
+        display: block;
+        font-size: 20px;
+        position: relative;
+        text-align: center;
+        color: black;
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 50px;
+        padding-top: 30px;
+        background: linear-gradient(
+            45deg,
+            rgb(84, 86, 92) 12%,
+            rgb(216, 217, 219) 24%
+          );
+}
+
+p{
+    grid-area: main; background: grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    color: white;
+
+}
+
+.subtituloPrecios{
+    grid-area: main; background: grey;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        font-size: 20px;
+        margin: 30px;
+        padding: 10px;
+        color: white;
+}
+
+.item {
+    grid-area: main; background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    color: black;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    
+}
+
